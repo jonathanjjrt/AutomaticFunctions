@@ -8,20 +8,8 @@ exports.wishlistDetail = (req, res) => {
 
 exports.consultWishlists = (req, res) => {
     
-    var jsonD = '{';
-    jsonD +='  "wishlisid": "1",';
-    jsonD +='  "wishlistname": "Fulanito",';
-    jsonD +='  "skuNumber": "5"';
-    jsonD +='},';
-    jsonD += '{';
-    jsonD +='  "wishlisid": "1",';
-    jsonD +='  "wishlistname": "Fulanito",';
-    jsonD +='  "skuNumber": "5"';
-    jsonD +='}';
 
-
-    //  ${escapeHtml(req.query.iduser)} ${escapeHtml(req.body.iduser)}   
-    res.send(`${jsonD}`);
+    res.send(`${escapeHtml(req.query.iduser)}`);
 
 
 }
