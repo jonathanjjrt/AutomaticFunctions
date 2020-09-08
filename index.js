@@ -9,7 +9,7 @@ exports.wishlistDetail = (req, res) => {
 exports.consultWishlists = (req, res) => {
     
 
-    res.send(`${escapeHtml(req.query.iduser)} :) :) :)`);
+    res.send(`${escapeHtml(req.query.iduser)} :) :) :) :)`);
 
 
 }
